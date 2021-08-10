@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="scripts.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="heading">Login To Your Account / Register New</h1>
+    </header>
+    <section class="form-section">
+      <div class="form-heading">
+        <img src="images/777823.png" alt="Login Icon" class="login-icon" />
+        <h1>Login To Your Account / Register New</h1>
+      </div>
+      <div class="form-body">
+        <form class="login-form">
+          <input
+            type="text"
+            class="login-username"
+            id="login-username"
+            name="login-username"
+            placeholder="User Name"
+            required
+          />
+          <input
+            type="password"
+            name="login-password"
+            id="login-password"
+            class="login-password"
+            placeholder="Password"
+            required
+          />
+          <div class="checkbox-button-area">
+            <div id="popup" class="popup">
+              <input
+                type="checkbox"
+                name="remember-password"
+                id="remember-password"
+                class="checkbox"
+              />
+              <label for="remember-password">Remember my password</label>
+            </div>
+            <button type="submit" class="login-button" id="login-button">
+              Login
+            </button>
+          </div>
+          <span class="popuptext" id="myPopup"
+            >You no longer need to enter a password every time you use the
+            site</span
+          >
+        </form>
+        <form class="register-form">
+          <h3>Register</h3>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="register-email"
+            id="register-email"
+            required
+          />
+          <label for="username">User Name</label>
+          <input
+            type="text"
+            name="register-username"
+            id="register-username"
+            required
+          />
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="register-password"
+            id="register-password"
+            required
+          />
+          <div>
+            <button type="submit" class="register-button" id="register-button">
+              Register
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
